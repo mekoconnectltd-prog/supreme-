@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample VAT Invoice – Meko Connect Ltd</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      margin: 0;
+      padding: 2rem;
+      color: #0f172a;
+    }
+    .invoice {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2rem;
+    }
+    .muted {
+      color: #475569;
+      line-height: 1.6;
+    }
+    .invoice-meta {
+      text-align: right;
+      line-height: 1.8;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 0.85rem;
+      text-align: left;
+    }
+    th {
+      background: #e2e8f0;
+    }
+    .totals {
+      margin-top: 1.5rem;
+      margin-left: auto;
+      width: 320px;
+    }
+    .totals table {
+      margin-top: 0;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #334155;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice">
+    <div class="top">
+      <div>
+        <h1>Meko Connect Ltd</h1>
+        <div class="muted">
+          71-75 Shelton Street<br>
+          London, WC2H 9JQ<br>
+          United Kingdom<br><br>
+          Email: hello@mekoconnect.co.uk<br>
+          Company No: 13066373<br>
+          VAT No: 501845316
+        </div>
+      </div>
+      <div class="invoice-meta">
+        <strong>VAT INVOICE</strong><br>
+        Invoice No: INV-2026-001<br>
+        Invoice Date: 30 May 2026<br>
+        Due Date: 30 May 2026
+      </div>
+    </div>
+
+    <div class="muted">
+      <strong>Bill To:</strong><br>
+      Example Customer Ltd<br>
+      10 Example Street<br>
+      London<br>
+      EC1A 1AA<br>
+      United Kingdom
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>Unit Price (£)</th>
+          <th>Net (£)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Business consulting / digital services</td>
+          <td>1</td>
+          <td>100.00</td>
+          <td>100.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="totals">
+      <table>
+        <tr>
+          <th>Net Total</th>
+          <td>£100.00</td>
+        </tr>
+        <tr>
+          <th>VAT</th>
+          <td>£20.00</td>
+        </tr>
+        <tr>
+          <th>Total</th>
+          <td><strong>£120.00</strong></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="footer">
+      This is a sample invoice issued by Meko Connect Ltd as the merchant of record.<br>
+      Customers pay Meko Connect Ltd directly. Agents are not authorised to invoice customers or collect payments on behalf of Meko Connect Ltd.
+    </div>
+  </div>
+</body>
+</html>
