@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meko Connect Ltd – Official Business Site</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,10 +14,9 @@
       align-items: center;
       min-height: 100vh;
       padding: 2rem 1rem;
-      color: #0f172a;
     }
     .card {
-      max-width: 900px;
+      max-width: 1000px;
       width: 100%;
       background: white;
       border-radius: 2rem;
@@ -40,7 +39,7 @@
       border-radius: 40px;
       padding: 0.2rem 0.8rem;
       font-size: 0.7rem;
-      font-weight: 600;
+      white-space: nowrap;
     }
     .content { padding: 2rem; }
     .company-name { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; }
@@ -66,11 +65,70 @@
       padding: 1rem;
       border-radius: 0.75rem;
       margin: 1rem 0;
-      line-height: 1.7;
+      line-height: 1.6;
+    }
+    .product-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 1rem;
+      padding: 1.2rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    .price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #166534;
+      margin: 0.5rem 0;
+    }
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.8rem;
+    }
+    button,
+    .secondary-link {
+      background: #0f172a;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.8rem;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.1s ease, background 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button:hover,
+    .secondary-link:hover {
+      background: #1e293b;
+      transform: scale(1.02);
+    }
+    button:disabled {
+      background: #64748b;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .secondary-link {
+      background: #475569;
+    }
+    .secondary-link:hover {
+      background: #334155;
+    }
+    .status {
+      margin-top: 0.8rem;
+      font-size: 0.92rem;
+      color: #334155;
+      min-height: 1.2rem;
     }
     hr { margin: 1.2rem 0; border: 0; border-top: 1px solid #e2e8f0; }
-    .compliance-note {
-      font-size: 0.95rem;
+    .legal-note {
+      font-size: 0.85rem;
       line-height: 1.6;
       color: #334155;
     }
@@ -85,40 +143,146 @@
     @media (max-width: 600px) {
       .content { padding: 1.2rem; }
       .company-name { font-size: 1.6rem; }
+      .price { font-size: 1.6rem; }
+      .button-row {
+        flex-direction: column;
+      }
+      button,
+      .secondary-link {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-<div class="card">
-  <div class="header-bar">
-    <span>✅ Merchant of Record | Direct Sales</span>
-    <span class="badge-stripe">UK VAT Registered</span>
+  <div class="card">
+    <div class="header-bar">
+      <span>✅ Merchant of Record | Direct Sales</span>
+      <span class="badge-stripe">UK VAT Registered</span>
+    </div>
+
+    <div class="content">
+      <div class="company-name">Meko Connect Ltd</div>
+      <div class="tagline">Supplying business consulting & digital tools — UK Limited Company</div>
+
+      <div class="description">
+        Meko Connect Ltd provides expert-led business consulting and digital tools. All orders are processed directly by us, a UK VAT-registered limited company. Agents may introduce customers, but all payments, invoicing, and fulfilment responsibility remain with Meko Connect Ltd.
+      </div>
+
+      <div class="product-card">
+        <h3>📘 1-Hour Strategy Session</h3>
+        <div class="price">£120.00</div>
+        <p style="margin: 0.5rem 0;">Personalised business consultation with a senior advisor.</p>
+
+        <div class="button-row">
+          <button id="checkoutButton">Buy now – Secure checkout</button>
+          <a class="secondary-link" href="./dashboard.html">View dashboard</a>
+        </div>
+
+        <div class="status" id="checkoutStatus"></div>
+      </div>
+
+      <div class="details">
+        <strong>📧 Contact:</strong> hello@mekoconnect.co.uk<br />
+        <strong>📍 Registered address:</strong> 71-75 Shelton Street, London, WC2H 9JQ, United Kingdom<br />
+        <strong>🔢 Company No.:</strong> 13066373<br />
+        <strong>🧾 VAT number:</strong> 501845316<br />
+        <strong>📦 Fulfilment:</strong> Digital delivery within 24 hours / physical goods shipped in 3–5 working days
+      </div>
+
+      <div class="refund-box">
+        <strong>🔄 Refund Policy</strong><br />
+        Customers may request a refund within 14 days of delivery for unused products, subject to our refund policy. For services, a full refund may be provided where no access or delivery has been provided. Contact hello@mekoconnect.co.uk. Approved refunds are issued within 7 days.
+      </div>
+
+      <hr />
+
+      <div class="legal-note">
+        ⚖️ Meko Connect Ltd is the sole merchant of record for all transactions. All invoices and payments are handled directly by Meko Connect Ltd. Any agents introducing customers are disclosed introducers only and do not process payments or issue invoices on behalf of the company.
+      </div>
+
+      <div class="footer-note">
+        © 2026 Meko Connect Ltd — All transactions processed directly.
+      </div>
+    </div>
   </div>
-  <div class="content">
-    <div class="company-name">Meko Connect Ltd</div>
-    <div class="tagline">Supplying business consulting and digital tools — UK Limited Company</div>
-    <div class="description">
-      Meko Connect Ltd is a UK-registered, VAT-registered business supplying business consulting and digital tools directly to customers. All orders are processed by us. We issue VAT invoices and handle fulfilment directly. Customers pay Meko Connect Ltd directly, and agents do not collect payments or access Stripe.
-    </div>
-    <div class="details">
-      <strong>📧 Contact:</strong> hello@mekoconnect.co.uk<br>
-      <strong>📍 Registered address:</strong> 2 Erica House, Cranfield Rd, London SE41 2TW, UK<br>
-      <strong>🔢 Company No.:</strong> 13066373<br>
-      <strong>🧾 VAT number:</strong> 501845316<br>
-      <strong>📦 Delivery:</strong> Digital delivery within 24 hours. Physical goods shipped in 3–5 working days.
-    </div>
-    <div class="refund-box">
-      <strong>🔄 Refund Policy</strong><br>
-      Customers may request a refund within 14 days of delivery. Physical products must be unused and returned in their original packaging. For digital services, a refund is available where no access or delivery has been provided. To request a refund, please email hello@mekoconnect.co.uk with your order number. Approved refunds are processed within 7 days.
-    </div>
-    <hr>
-    <div class="compliance-note">
-      Meko Connect Ltd is the merchant of record for all transactions. Agents introducing customers are not authorised to take payments, issue invoices, or make binding commitments on behalf of Meko Connect Ltd. All sales are subject to the laws of England and Wales.
-    </div>
-    <div class="footer-note">
-      © 2026 Meko Connect Ltd — All transactions processed directly.
-    </div>
-  </div>
-</div>
+
+  <script>
+    const API_BASE =
+      window.location.hostname === 'mekoconnectltd-prog.github.io'
+        ? 'https://meko-connect-api.vercel.app'
+        : 'http://localhost:3000';
+
+    const selectedAgentId = 'REPLACE_ME_AGENT_ACCT_ID';
+    const selectedSubId = 'REPLACE_ME_SUBCONTRACTOR_ACCT_ID';
+    const selectedPriceId = 'REPLACE_ME_PRICE_ID';
+    const backendCheckoutUrl = API_BASE + '/api/create-checkout';
+
+    const checkoutButton = document.getElementById('checkoutButton');
+    const checkoutStatus = document.getElementById('checkoutStatus');
+
+    checkoutButton.addEventListener('click', async () => {
+      checkoutButton.disabled = true;
+      checkoutStatus.textContent = 'Starting secure checkout...';
+
+      try {
+        const response = await fetch(backendCheckoutUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            agentId: selectedAgentId,
+            subId: selectedSubId,
+            priceId: selectedPriceId
+          })
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.url) {
+          window.location.href = data.url;
+          return;
+        }
+
+        checkoutStatus.textContent = 'Unable to start checkout. Please try again.';
+        checkoutButton.disabled = false;
+      } catch (error) {
+        console.error('Checkout request failed:', error);
+        checkoutStatus.textContent = 'Network error. Please try again.';
+        checkoutButton.disabled = false;
+      }
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const paymentStatus = urlParams.get('payment');
+
+    function showPaymentMessage(message, backgroundColor) {
+      const msg = document.createElement('div');
+      msg.style.position = 'fixed';
+      msg.style.bottom = '20px';
+      msg.style.left = '50%';
+      msg.style.transform = 'translateX(-50%)';
+      msg.style.backgroundColor = backgroundColor;
+      msg.style.color = 'white';
+      msg.style.padding = '12px 24px';
+      msg.style.borderRadius = '40px';
+      msg.style.fontWeight = '600';
+      msg.style.zIndex = '1000';
+      msg.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+      msg.innerText = message;
+      document.body.appendChild(msg);
+
+      setTimeout(() => msg.remove(), 5000);
+
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+
+    if (paymentStatus === 'success') {
+      showPaymentMessage('✅ Payment successful! Thank you for your order.', '#10b981');
+    } else if (paymentStatus === 'cancel') {
+      showPaymentMessage('❌ Payment cancelled. No charge was made.', '#ef4444');
+    }
+  </script>
 </body>
 </html>
