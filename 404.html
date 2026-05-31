@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Meko Connect Ltd</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+      --border: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      background: var(--card-bg);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    .error-code {
+      font-size: 4.5rem;
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, #3b82f6, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      letter-spacing: -0.05em;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 0.975rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      background: var(--accent);
+      color: white;
+      padding: 0.875rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    }
+
+    .btn:hover {
+      background: #2563eb;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px var(--accent-glow);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .footer-meta {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="error-code">404</div>
+    <h1>Route Terminated</h1>
+    <p>The system configuration or data node you are trying to access does not exist or has been relocated.</p>
+    
+    <a href="https://mekoconnectltd-prog.github.io/supreme-/" class="btn">
+      Return to Platform Home
+    </a>
+
+    <div class="footer-meta">
+      Meko Connect Ltd &bull; Core Infrastructure
+    </div>
+  </div>
+
+</body>
+</html>
