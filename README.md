@@ -12,7 +12,7 @@ Public business information site for Meko Connect Ltd.
 - Company number: 13066373
 - VAT number: 501845316
 - Email: mekoconnectltd@gmail.com
-- Registered address: 71-75 Shelton Street, London, WC2H 9JQ, United Kingdom
+- Registered address: 2 Erica House, Cranfield Rd, London SE41TW
 
 ## Business summary
 Meko Connect Ltd is a UK-registered, VAT-registered business supplying business consulting and digital tools directly to customers. Customers pay Meko Connect Ltd directly. We issue VAT invoices and remain responsible for delivery, refunds, and support.
