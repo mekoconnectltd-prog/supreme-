@@ -5,19 +5,20 @@ Public business information site for Meko Connect Ltd.
 ## Live URLs
 - Homepage: https://mekoconnectltd-prog.github.io/supreme-/
 - Sample invoice: https://mekoconnectltd-prog.github.io/supreme-/sample-invoice.html
+- Dashboard: https://mekoconnectltd-prog.github.io/supreme-/dashboard.html
 
 ## Company details
 - Company name: Meko Connect Ltd
 - Company number: 13066373
 - VAT number: 501845316
-- Email: hello@mekoconnect.co.uk
-- Registered address: 2 Erica House, Cranfield Rd, London SE41 2TW, UK
+- Email: mekoconnectltd@gmail.com
+- Registered address: 71-75 Shelton Street, London, WC2H 9JQ, United Kingdom
 
 ## Business summary
-Meko Connect Ltd is a UK-registered, VAT-registered business supplying business consulting and digital tools directly to customers. Customers pay Meko Connect Ltd directly. We issue VAT invoices and handle fulfilment ourselves.
+Meko Connect Ltd is a UK-registered, VAT-registered business supplying business consulting and digital tools directly to customers. Customers pay Meko Connect Ltd directly. We issue VAT invoices and remain responsible for delivery, refunds, and support.
 
 ## Policies
-- Refunds: Customers may request a refund within 14 days of delivery. Physical products must be unused and returned in original packaging. For digital services, refunds are available where no access or delivery has been provided. Approved refunds are processed within 7 days.
+- Refunds: Customers may request a refund within 14 days of delivery. Physical products must be unused and returned in original packaging. For digital services, refunds are available where no access or download has been consumed, unless otherwise stated.
 - Delivery: Digital delivery within 24 hours. Physical goods shipped in 3–5 working days.
 
 ## Compliance
